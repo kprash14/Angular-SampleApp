@@ -1,0 +1,27 @@
+<div class ="container">
+    <div class = "card">
+        <h3 class="text-center"> Flights passenger Details</h3>
+        <div class = "card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Id</th>
+                    <th> Flight</th>
+                    <th> Airline</th>
+                    <th> ArrivalTime </th>
+                    <th> departureTime </th>
+                    <th> price </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let flight of flights">
+                        <td> {{flight.id}} </td>
+                        <td> {{flight.flight}} </td>
+                        <td> {{flight.airline}} </td>
+                        <td> {{flight.arrivalTime}} </td>
+                        <td> {{flight.departureTime}} </td>
+                        <td> {{flight.price}} </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
